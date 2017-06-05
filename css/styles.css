@@ -1,0 +1,217 @@
+/*-------------------------------------------------
+DEFINIÇÃO GLOBAL
+-------------------------------------------------*/
+*
+{
+    padding:0; 
+    margin:0;
+}
+body,html
+{
+    font-family: 'Pontano Sans', sans-serif; 
+    font-size:14px; 
+    color:#9b9e9a; 
+    position: relative;
+    background: #FF4E50; 
+    background: -webkit-linear-gradient(right, rgb(179, 255, 102), #F9D423); 
+
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+p
+{
+    color: rgb(51, 102, 255);
+    text-shadow: 0 0 5px rgba(255,255,255,0.3);
+}
+h1
+{
+    color: rgb(230, 115, 0);
+    text-shadow: 0 0 5px rgba(255,255,255,0.7);
+}
+h4
+{
+    color: rgb(204, 102, 0);
+    text-shadow: 0 0 5px rgba(255,255,255,0.9);
+}
+.page
+{ 
+    width:1000px;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+/*-------------------------------------------------
+HEADER  COM EFEITO DE SOMBRA BRANCA, USAMOS O FATOR ALPHA DE 0.7
+-------------------------------------------------*/
+.header
+{
+    background: rgb(25, 77, 25);
+    background: -webkit-linear-gradient(right, rgb(64, 128, 0)), rgb(51, 153, 51); 
+    overflow:hidden; 
+    padding-top:5px; 
+    padding-bottom:40px;
+    text-shadow: 0 0 5px rgba(255,255,255,0.7);
+    width:0 auto; 
+    margin:0 auto;
+}
+
+/*MENU SUPERIOR*/
+
+.logo
+{ 
+    float:left; 
+    color:#ffffff;
+    position: relative;
+}
+.menu
+{ 
+    float:right;
+}
+.menu ul li
+{ 
+    list-style:none; 
+    float:left; 
+    font-size:18px; 
+    padding:10px;
+}
+.menu ul li a
+{
+    color:#ffffff; 
+    text-decoration:none;
+    padding:10px;
+}
+.menu ul li a:hover
+{ 
+    background:rgb(31,96,31); 
+    padding:10px;
+}
+
+
+
+/*-------------------------------------------------
+RODAPÉ
+-------------------------------------------------*/
+
+.footer-wrap
+{ 
+    background:rgb(56, 173, 56); 
+    overflow:hidden;
+    padding:40px 40px;
+}
+.footer
+{
+    width:1000px;
+    margin:0 auto;
+}
+
+
+/*LISTA DOS PRODUTOS*/
+.list li 
+{
+
+    border-bottom: 1px solid #ccc;
+    display: block;
+    border-collapse: collapse;
+    width: 100%;
+    height: 27%;
+    overflow: hidden;
+}
+.inner
+{
+    display: table-row;
+    overflow: hidden;
+    width: 100%;
+    height: 27%;
+}
+.li-img 
+{
+    display: table-cell;
+    vertical-align: middle;
+    width: 20%;
+    padding-right: 2em;
+    height: auto;
+    overflow: hidden;
+}
+.li-img img 
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.li-text 
+{
+    display: table-cell;
+    vertical-align: middle;
+    width: 70%;
+    padding-right: 1em;
+    height: auto;
+    overflow: hidden;
+}
+.li-head 
+{
+    margin: 0;
+    overflow: hidden;
+}
+.li-summary 
+{
+    display: none;
+    margin: 0;
+    overflow: hidden;
+}
+.li-action
+{
+    margin: 0;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 40em)
+{
+  .list li
+{
+      background: none;
+      overflow: hidden;
+}
+.li-summary 
+{
+      display: block;
+    
+}
+}
+
+@media screen and (min-width: 60em)
+{
+  .list li
+{
+      float: left;
+      width: 50%;
+}
+.inner 
+{
+      padding-right: 1em;
+}
+}
+
+
+.pagPrin
+{
+     height: 600px;
+     width: 100%;
+}
+
+
+
+#pagPrins
+{
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  top: 25%;
+  width: 60%;
+  text-shadow: 0 0 5px rgba(255,255,255,0.3);
+  background: rgba(65,150,0,0.2);
+}
+
